@@ -5,6 +5,7 @@ A clone of the Pinterest iOS app context menu.
 ![BackgroundImage](https://github.com/vangelov/VLDContextSheet/blob/master/Screenshot.png)
 
 ## Example Usage
+
 ```objective-c
 VLDContextSheetItem *item1 = [[VLDContextSheetItem alloc] initWithTitle: @"Gift"
                                                                   image: [UIImage imageNamed: @"gift"]
@@ -27,6 +28,13 @@ self.contextSheet.delegate = self;
         [self.contextSheet startWithGestureRecognizer: gestureRecognizer
                                                inView: self.view];
     }
+}
+```
+### Delegate method
+
+```objective-c
+- (void) contextSheet: (VLDContextSheet *) contextSheet didSelectItem: (VLDContextSheetItem *) item {
+    NSLog(@"Selected item: %@", item.title);
 }
 ```
 
