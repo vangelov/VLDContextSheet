@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75001E4F1A0662990098C5C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75001E4E1A0662990098C5C4 /* Foundation.framework */; };
+		75001E511A0662990098C5C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75001E501A0662990098C5C4 /* CoreGraphics.framework */; };
+		75001E531A0662990098C5C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75001E521A0662990098C5C4 /* UIKit.framework */; };
+		75001E591A06629A0098C5C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75001E571A06629A0098C5C4 /* InfoPlist.strings */; };
+		75001E5B1A06629A0098C5C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75001E5A1A06629A0098C5C4 /* main.m */; };
+		75001E5F1A06629A0098C5C4 /* VLDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75001E5E1A06629A0098C5C4 /* VLDAppDelegate.m */; };
+		75001E611A06629A0098C5C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75001E601A06629A0098C5C4 /* Images.xcassets */; };
+		75001E681A06629A0098C5C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75001E671A06629A0098C5C4 /* XCTest.framework */; };
+		75001E691A06629A0098C5C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75001E4E1A0662990098C5C4 /* Foundation.framework */; };
+		75001E6A1A06629A0098C5C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75001E521A0662990098C5C4 /* UIKit.framework */; };
+		75001E721A06629A0098C5C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75001E701A06629A0098C5C4 /* InfoPlist.strings */; };
+		75001E741A06629A0098C5C4 /* VLDContextSheetExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75001E731A06629A0098C5C4 /* VLDContextSheetExampleTests.m */; };
+		75001E841A0662CF0098C5C4 /* VLDContextSheetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 75001E7F1A0662CF0098C5C4 /* VLDContextSheetItem.m */; };
+		75001E851A0662CF0098C5C4 /* VLDContextSheetItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75001E811A0662CF0098C5C4 /* VLDContextSheetItemView.m */; };
+		75001E861A0662CF0098C5C4 /* VLDContextSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 75001E831A0662CF0098C5C4 /* VLDContextSheet.m */; };
+		75001E891A0663190098C5C4 /* VLDExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75001E881A0663190098C5C4 /* VLDExampleViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75001E6B1A06629A0098C5C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75001E431A0662990098C5C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75001E4A1A0662990098C5C4;
+			remoteInfo = VLDContextSheetExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75001E4B1A0662990098C5C4 /* VLDContextSheetExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VLDContextSheetExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75001E4E1A0662990098C5C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75001E501A0662990098C5C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		75001E521A0662990098C5C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		75001E561A06629A0098C5C4 /* VLDContextSheetExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLDContextSheetExample-Info.plist"; sourceTree = "<group>"; };
+		75001E581A06629A0098C5C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75001E5A1A06629A0098C5C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75001E5C1A06629A0098C5C4 /* VLDContextSheetExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VLDContextSheetExample-Prefix.pch"; sourceTree = "<group>"; };
+		75001E5D1A06629A0098C5C4 /* VLDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLDAppDelegate.h; sourceTree = "<group>"; };
+		75001E5E1A06629A0098C5C4 /* VLDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLDAppDelegate.m; sourceTree = "<group>"; };
+		75001E601A06629A0098C5C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		75001E661A06629A0098C5C4 /* VLDContextSheetExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VLDContextSheetExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75001E671A06629A0098C5C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		75001E6F1A06629A0098C5C4 /* VLDContextSheetExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLDContextSheetExampleTests-Info.plist"; sourceTree = "<group>"; };
+		75001E711A06629A0098C5C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75001E731A06629A0098C5C4 /* VLDContextSheetExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLDContextSheetExampleTests.m; sourceTree = "<group>"; };
+		75001E7E1A0662CF0098C5C4 /* VLDContextSheetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLDContextSheetItem.h; sourceTree = "<group>"; };
+		75001E7F1A0662CF0098C5C4 /* VLDContextSheetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLDContextSheetItem.m; sourceTree = "<group>"; };
+		75001E801A0662CF0098C5C4 /* VLDContextSheetItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLDContextSheetItemView.h; sourceTree = "<group>"; };
+		75001E811A0662CF0098C5C4 /* VLDContextSheetItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLDContextSheetItemView.m; sourceTree = "<group>"; };
+		75001E821A0662CF0098C5C4 /* VLDContextSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLDContextSheet.h; sourceTree = "<group>"; };
+		75001E831A0662CF0098C5C4 /* VLDContextSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLDContextSheet.m; sourceTree = "<group>"; };
+		75001E871A0663190098C5C4 /* VLDExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLDExampleViewController.h; sourceTree = "<group>"; };
+		75001E881A0663190098C5C4 /* VLDExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLDExampleViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75001E481A0662990098C5C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75001E511A0662990098C5C4 /* CoreGraphics.framework in Frameworks */,
+				75001E531A0662990098C5C4 /* UIKit.framework in Frameworks */,
+				75001E4F1A0662990098C5C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75001E631A06629A0098C5C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75001E681A06629A0098C5C4 /* XCTest.framework in Frameworks */,
+				75001E6A1A06629A0098C5C4 /* UIKit.framework in Frameworks */,
+				75001E691A06629A0098C5C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75001E421A0662990098C5C4 = {
+			isa = PBXGroup;
+			children = (
+				75001E7D1A0662CF0098C5C4 /* VLDContextSheet */,
+				75001E541A06629A0098C5C4 /* VLDContextSheetExample */,
+				75001E6D1A06629A0098C5C4 /* VLDContextSheetExampleTests */,
+				75001E4D1A0662990098C5C4 /* Frameworks */,
+				75001E4C1A0662990098C5C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75001E4C1A0662990098C5C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75001E4B1A0662990098C5C4 /* VLDContextSheetExample.app */,
+				75001E661A06629A0098C5C4 /* VLDContextSheetExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75001E4D1A0662990098C5C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75001E4E1A0662990098C5C4 /* Foundation.framework */,
+				75001E501A0662990098C5C4 /* CoreGraphics.framework */,
+				75001E521A0662990098C5C4 /* UIKit.framework */,
+				75001E671A06629A0098C5C4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75001E541A06629A0098C5C4 /* VLDContextSheetExample */ = {
+			isa = PBXGroup;
+			children = (
+				75001E5D1A06629A0098C5C4 /* VLDAppDelegate.h */,
+				75001E5E1A06629A0098C5C4 /* VLDAppDelegate.m */,
+				75001E871A0663190098C5C4 /* VLDExampleViewController.h */,
+				75001E881A0663190098C5C4 /* VLDExampleViewController.m */,
+				75001E601A06629A0098C5C4 /* Images.xcassets */,
+				75001E551A06629A0098C5C4 /* Supporting Files */,
+			);
+			path = VLDContextSheetExample;
+			sourceTree = "<group>";
+		};
+		75001E551A06629A0098C5C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75001E561A06629A0098C5C4 /* VLDContextSheetExample-Info.plist */,
+				75001E571A06629A0098C5C4 /* InfoPlist.strings */,
+				75001E5A1A06629A0098C5C4 /* main.m */,
+				75001E5C1A06629A0098C5C4 /* VLDContextSheetExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75001E6D1A06629A0098C5C4 /* VLDContextSheetExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				75001E731A06629A0098C5C4 /* VLDContextSheetExampleTests.m */,
+				75001E6E1A06629A0098C5C4 /* Supporting Files */,
+			);
+			path = VLDContextSheetExampleTests;
+			sourceTree = "<group>";
+		};
+		75001E6E1A06629A0098C5C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75001E6F1A06629A0098C5C4 /* VLDContextSheetExampleTests-Info.plist */,
+				75001E701A06629A0098C5C4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75001E7D1A0662CF0098C5C4 /* VLDContextSheet */ = {
+			isa = PBXGroup;
+			children = (
+				75001E7E1A0662CF0098C5C4 /* VLDContextSheetItem.h */,
+				75001E7F1A0662CF0098C5C4 /* VLDContextSheetItem.m */,
+				75001E801A0662CF0098C5C4 /* VLDContextSheetItemView.h */,
+				75001E811A0662CF0098C5C4 /* VLDContextSheetItemView.m */,
+				75001E821A0662CF0098C5C4 /* VLDContextSheet.h */,
+				75001E831A0662CF0098C5C4 /* VLDContextSheet.m */,
+			);
+			name = VLDContextSheet;
+			path = ../VLDContextSheet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75001E4A1A0662990098C5C4 /* VLDContextSheetExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75001E771A06629A0098C5C4 /* Build configuration list for PBXNativeTarget "VLDContextSheetExample" */;
+			buildPhases = (
+				75001E471A0662990098C5C4 /* Sources */,
+				75001E481A0662990098C5C4 /* Frameworks */,
+				75001E491A0662990098C5C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VLDContextSheetExample;
+			productName = VLDContextSheetExample;
+			productReference = 75001E4B1A0662990098C5C4 /* VLDContextSheetExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75001E651A06629A0098C5C4 /* VLDContextSheetExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75001E7A1A06629A0098C5C4 /* Build configuration list for PBXNativeTarget "VLDContextSheetExampleTests" */;
+			buildPhases = (
+				75001E621A06629A0098C5C4 /* Sources */,
+				75001E631A06629A0098C5C4 /* Frameworks */,
+				75001E641A06629A0098C5C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75001E6C1A06629A0098C5C4 /* PBXTargetDependency */,
+			);
+			name = VLDContextSheetExampleTests;
+			productName = VLDContextSheetExampleTests;
+			productReference = 75001E661A06629A0098C5C4 /* VLDContextSheetExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75001E431A0662990098C5C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VLD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Vladimir Angelov";
+				TargetAttributes = {
+					75001E651A06629A0098C5C4 = {
+						TestTargetID = 75001E4A1A0662990098C5C4;
+					};
+				};
+			};
+			buildConfigurationList = 75001E461A0662990098C5C4 /* Build configuration list for PBXProject "VLDContextSheetExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75001E421A0662990098C5C4;
+			productRefGroup = 75001E4C1A0662990098C5C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75001E4A1A0662990098C5C4 /* VLDContextSheetExample */,
+				75001E651A06629A0098C5C4 /* VLDContextSheetExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75001E491A0662990098C5C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75001E591A06629A0098C5C4 /* InfoPlist.strings in Resources */,
+				75001E611A06629A0098C5C4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75001E641A06629A0098C5C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75001E721A06629A0098C5C4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75001E471A0662990098C5C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75001E891A0663190098C5C4 /* VLDExampleViewController.m in Sources */,
+				75001E861A0662CF0098C5C4 /* VLDContextSheet.m in Sources */,
+				75001E851A0662CF0098C5C4 /* VLDContextSheetItemView.m in Sources */,
+				75001E5B1A06629A0098C5C4 /* main.m in Sources */,
+				75001E841A0662CF0098C5C4 /* VLDContextSheetItem.m in Sources */,
+				75001E5F1A06629A0098C5C4 /* VLDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75001E621A06629A0098C5C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75001E741A06629A0098C5C4 /* VLDContextSheetExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75001E6C1A06629A0098C5C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75001E4A1A0662990098C5C4 /* VLDContextSheetExample */;
+			targetProxy = 75001E6B1A06629A0098C5C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75001E571A06629A0098C5C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75001E581A06629A0098C5C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75001E701A06629A0098C5C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75001E711A06629A0098C5C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75001E751A06629A0098C5C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75001E761A06629A0098C5C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75001E781A06629A0098C5C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLDContextSheetExample/VLDContextSheetExample-Prefix.pch";
+				INFOPLIST_FILE = "VLDContextSheetExample/VLDContextSheetExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75001E791A06629A0098C5C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLDContextSheetExample/VLDContextSheetExample-Prefix.pch";
+				INFOPLIST_FILE = "VLDContextSheetExample/VLDContextSheetExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		75001E7B1A06629A0098C5C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLDContextSheetExample.app/VLDContextSheetExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLDContextSheetExample/VLDContextSheetExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VLDContextSheetExampleTests/VLDContextSheetExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		75001E7C1A06629A0098C5C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLDContextSheetExample.app/VLDContextSheetExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLDContextSheetExample/VLDContextSheetExample-Prefix.pch";
+				INFOPLIST_FILE = "VLDContextSheetExampleTests/VLDContextSheetExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75001E461A0662990098C5C4 /* Build configuration list for PBXProject "VLDContextSheetExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75001E751A06629A0098C5C4 /* Debug */,
+				75001E761A06629A0098C5C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75001E771A06629A0098C5C4 /* Build configuration list for PBXNativeTarget "VLDContextSheetExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75001E781A06629A0098C5C4 /* Debug */,
+				75001E791A06629A0098C5C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75001E7A1A06629A0098C5C4 /* Build configuration list for PBXNativeTarget "VLDContextSheetExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75001E7B1A06629A0098C5C4 /* Debug */,
+				75001E7C1A06629A0098C5C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75001E431A0662990098C5C4 /* Project object */;
+}
