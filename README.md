@@ -1,12 +1,14 @@
 ## VLDContextSheet
 
-A clone of the Pinterest context menu.
+A clone of the Pinterest iOS app context menu.
+
+![BackgroundImage](https://github.com/vangelov/VLDContextSheet/blob/master/Screenshot.png)
 
 ## Example Usage
 ```objective-c
- VLDContextSheetItem *item1 = [[VLDContextSheetItem alloc] initWithTitle: @"Gift"
-                                                                image: [UIImage imageNamed: @"gift"]
-                                                     highlightedImage: [UIImage imageNamed: @"gift_highlighted"]];
+VLDContextSheetItem *item1 = [[VLDContextSheetItem alloc] initWithTitle: @"Gift"
+                                                                  image: [UIImage imageNamed: @"gift"]
+                                                       highlightedImage: [UIImage imageNamed: @"gift_highlighted"]];
 
 VLDContextSheetItem *item2 = ...
     
