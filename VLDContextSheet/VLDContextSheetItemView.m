@@ -11,7 +11,7 @@
 #import <CoreImage/CoreImage.h>
 
 
-static const NSInteger KGTextPadding = 5;
+static const NSInteger VLDTextPadding = 5;
 
 @interface VLDContextSheetItemView ()
 
@@ -79,7 +79,7 @@ static const NSInteger KGTextPadding = 5;
 
 - (void) updateLabelText {
     self.label.text = self.item.title;
-    self.labelWidth = 2 * KGTextPadding + ceil([self.label.text sizeWithAttributes: @{ NSFontAttributeName: self.label.font }].width);
+    self.labelWidth = 2 * VLDTextPadding + ceil([self.label.text sizeWithAttributes: @{ NSFontAttributeName: self.label.font }].width);
     [self setNeedsDisplay];
 }
 
