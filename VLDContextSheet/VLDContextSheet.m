@@ -244,7 +244,7 @@ static CGFloat VLDVectorLength(CGPoint vector) {
 }
 
 - (CGFloat) rotationForCenter: (CGPoint) center {
-    for(NSInteger i = 0; i < 10; i++) {
+    for(NSInteger i = 0; i < VLDZonesCount; i++) {
         VLDZone zone = zones[i];
         
         if(CGRectContainsPoint(zone.rect, center)) {
