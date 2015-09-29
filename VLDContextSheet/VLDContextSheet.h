@@ -23,6 +23,7 @@
 @property (assign, nonatomic) CGFloat rangeAngle;
 @property (strong, nonatomic) NSArray *items;
 @property (assign, nonatomic) id<VLDContextSheetDelegate> delegate;
+@property (copy, nonatomic) void (^didSelectItemHandler)(VLDContextSheetItem *item);
 
 - (id) initWithItems: (NSArray *) items;
 

@@ -382,6 +382,9 @@ static CGRect VLDOrientedScreenBounds() {
     
     if(self.selectedItemView && self.selectedItemView.isHighlighted) {
         [self.delegate contextSheet: self didSelectItem: self.selectedItemView.item];
+        if (self.didSelectItemHandler) {
+            self.didSelectItemHandler(self.selectedItemView.item);
+        }
     }
     
     [self closeItemsToCenterView];
