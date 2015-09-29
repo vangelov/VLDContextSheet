@@ -33,18 +33,6 @@ static CGFloat VLDVectorLength(CGPoint vector) {
     return sqrt(vector.x * vector.x + vector.y * vector.y);
 }
 
-static CGRect VLDOrientedScreenBounds() {
-    CGRect bounds = [UIScreen mainScreen].bounds;
-    
-    if(UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation) &&
-        bounds.size.width < bounds.size.height) {
-        
-        bounds.size = CGSizeMake(bounds.size.height, bounds.size.width);
-    }
-    
-    return bounds;
-}
-
 @interface VLDContextSheet ()
 
 @property (strong, nonatomic) NSArray *itemViews;
@@ -239,7 +227,7 @@ static CGRect VLDOrientedScreenBounds() {
 - (void) startWithGestureRecognizer: (UIGestureRecognizer *) gestureRecognizer inView: (UIView *) view {
     [view addSubview: self];
     
-    self.frame = VLDOrientedScreenBounds();
+    self.frame = view.bounds;
     [self createZones];
     
     self.starterGestureRecognizer = gestureRecognizer;
