@@ -226,8 +226,13 @@ static CGFloat VLDVectorLength(CGPoint vector) {
 
 - (void) startWithGestureRecognizer: (UIGestureRecognizer *) gestureRecognizer inView: (UIView *) view {
     [view addSubview: self];
-    
-    self.frame = view.bounds;
+    if ([view isKindOfClass:[UIScrollView class]]) {
+        UIScrollView *scrollView = (UIScrollView *)view;
+        self.frame = UIEdgeInsetsInsetRect(scrollView.bounds, scrollView.contentInset);
+    }
+    else {
+        self.frame = view.bounds;
+    }
     [self createZones];
     
     self.starterGestureRecognizer = gestureRecognizer;
