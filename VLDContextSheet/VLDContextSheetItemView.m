@@ -27,7 +27,7 @@ static const NSInteger VLDTextPadding = 5;
 @synthesize item = _item;
 
 - (id) initWithFrame: (CGRect) frame {
-    self = [super initWithFrame: CGRectMake(0, 0, 50, 83)];
+    self = [super initWithFrame: frame];
     
     if(self) {
         [self createSubviews];

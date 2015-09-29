@@ -67,10 +67,15 @@ static CGRect VLDOrientedScreenBounds() {
 }
 
 - (id) initWithItems: (NSArray *) items {
-    self = [super initWithFrame: VLDOrientedScreenBounds()];
+    return [self initWithItems:items itemSize:CGSizeMake(50, 83)];
+}
+
+- (id) initWithItems: (NSArray *) items itemSize: (CGSize) itemSize {
+    self = [super initWithFrame: CGRectZero];
     
     if(self) {
         _items = items;
+        _itemSize = itemSize;
         _radius = 100;
         _rangeAngle = M_PI / 1.6;
         
@@ -92,7 +97,7 @@ static CGRect VLDOrientedScreenBounds() {
     _itemViews = [[NSMutableArray alloc] init];
     
     for(VLDContextSheetItem *item in _items) {
-        VLDContextSheetItemView *itemView = [[VLDContextSheetItemView alloc] init];
+        VLDContextSheetItemView *itemView = [[VLDContextSheetItemView alloc] initWithFrame:CGRectMake(0, 0, self.itemSize.width, self.itemSize.height)];
         itemView.item = item;
         
         [self addSubview: itemView];
@@ -100,9 +105,11 @@ static CGRect VLDOrientedScreenBounds() {
     }
     
     VLDContextSheetItemView *sampleItemView = _itemViews[0];
-    
-    _centerView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, sampleItemView.frame.size.width, sampleItemView.frame.size.width)];
-    _centerView.layer.cornerRadius = 25;
+
+    CGFloat circleDiameter = MIN(self.itemSize.width, self.itemSize.height);
+
+    _centerView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, circleDiameter, circleDiameter)];
+    _centerView.layer.cornerRadius = circleDiameter / 2.0;
     _centerView.layer.borderWidth = 2;
     _centerView.layer.borderColor = [UIColor grayColor].CGColor;
     [self addSubview: _centerView];
