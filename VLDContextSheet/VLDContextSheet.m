@@ -117,7 +117,7 @@ static CGFloat VLDVectorLength(CGPoint vector) {
 - (void) createZones {
     CGRect screenRect = self.bounds;
     
-    NSInteger rowHeight1 = 120;
+    NSInteger rowHeight1 = self.itemSize.height + self.radius;
     
     zones[0] = VLDZoneMake(CGRectMake(0, 0, 70, rowHeight1), 0.8);
     zones[1] = VLDZoneMake(CGRectMake(zones[0].rect.size.width, 0, 40, rowHeight1), 0.4);
