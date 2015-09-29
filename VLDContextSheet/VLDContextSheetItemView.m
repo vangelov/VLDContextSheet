@@ -38,10 +38,12 @@ static const NSInteger VLDTextPadding = 5;
 
 - (void) createSubviews {
     _imageView = [[UIImageView alloc] init];
+    _imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview: _imageView];
     
     _highlightedImageView = [[UIImageView alloc] init];
     _highlightedImageView.alpha = 0.0;
+    _highlightedImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview: _highlightedImageView];
     
     _label = [[UILabel alloc] init];
