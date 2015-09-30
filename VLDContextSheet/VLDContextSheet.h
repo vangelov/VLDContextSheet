@@ -21,10 +21,13 @@
 @property (assign, nonatomic) NSInteger radius;
 @property (assign, nonatomic) CGFloat rotation;
 @property (assign, nonatomic) CGFloat rangeAngle;
+@property (assign, nonatomic) CGSize itemSize;
 @property (strong, nonatomic) NSArray *items;
 @property (assign, nonatomic) id<VLDContextSheetDelegate> delegate;
+@property (copy, nonatomic) void (^didSelectItemHandler)(VLDContextSheetItem *item);
 
 - (id) initWithItems: (NSArray *) items;
+- (id) initWithItems: (NSArray *) items itemSize: (CGSize) itemSize;
 
 - (void) startWithGestureRecognizer: (UIGestureRecognizer *) gestureRecognizer
                              inView: (UIView *) view;
